@@ -1,32 +1,32 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OrganizeMeetupComponent } from './organize-meetup.component';
-import { HttpClientModule } from '@angular/common/http';
-import { RouterTestingModule } from '@angular/router/testing';
-import { MatIconModule } from '@angular/material/icon';
-import { NgxAuthFirebaseUIModule } from 'ngx-auth-firebaseui';
+import { AuthComponent } from './auth.component';
+import { AngularFireModule } from '@angular/fire';
 import { environment } from '../../environments/environment';
+import { RouterTestingModule } from '@angular/router/testing';
+import { NgxAuthFirebaseUIModule } from 'ngx-auth-firebaseui';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDividerModule } from '@angular/material/divider';
 
-describe('OrganizeMeetupComponent', () => {
-  let component: OrganizeMeetupComponent;
-  let fixture: ComponentFixture<OrganizeMeetupComponent>;
+describe('AuthComponent', () => {
+  let component: AuthComponent;
+  let fixture: ComponentFixture<AuthComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        HttpClientModule,
+        NoopAnimationsModule,
+        AngularFireModule.initializeApp(environment.firebase),
         RouterTestingModule,
         NgxAuthFirebaseUIModule.forRoot(environment.firebase),
-        NoopAnimationsModule,
-        MatIconModule
+        MatDividerModule
       ],
-      declarations: [OrganizeMeetupComponent]
+      declarations: [AuthComponent]
     }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(OrganizeMeetupComponent);
+    fixture = TestBed.createComponent(AuthComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

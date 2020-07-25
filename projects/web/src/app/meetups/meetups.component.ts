@@ -41,12 +41,100 @@ export class MeetupsComponent implements OnInit {
       meetupUrl: 'https://www.meetup.com/es/angularQuito/'
     },
     {
+      name: 'Angular Dominicana',
+      city: 'Santo Domingo',
+      country: 'República Dominicana',
+      logoUrl: 'assets/meetups/ng-dominican.svg',
+      logoType: 'svg',
+      meetupUrl: 'https://www.twitter.com/ngdominican'
+    },
+    {
       name: 'NG-BAIRES',
       city: 'Buenos Aires',
       country: 'Argentina',
       logoUrl: 'assets/meetups/ng-baires.png',
       logoType: 'png',
       meetupUrl: 'https://twitter.com/ngbaires'
+    },
+    {
+      name: 'Angular Bolivia',
+      city: 'Cochabamba',
+      country: 'Bolivia',
+      logoUrl: 'assets/meetups/angular-bolivia.jpg',
+      logoType: 'jpg',
+      meetupUrl: 'https://www.meetup.com/Angular-Bolivia/'
+    },
+    {
+      name: 'Angular Chile',
+      city: 'Chile',
+      country: 'Chile',
+      logoUrl: 'assets/meetups/angular-chile.jpg',
+      logoType: 'jpg',
+      meetupUrl: 'https://twitter.com/angularChile'
+    },
+    {
+      name: 'Angular Costa Rica',
+      city: 'Costa Rica',
+      country: 'Costa Rica',
+      logoUrl: 'assets/meetups/angular-costarica.png',
+      logoType: 'png',
+      meetupUrl: 'https://www.meetup.com/gdg-costarica/'
+    },
+    {
+      name: 'Angular Honduras',
+      city: 'San Pedro Sula',
+      country: 'Honduras',
+      logoUrl: 'assets/meetups/angular-honduras.svg',
+      logoType: 'svg',
+      meetupUrl: 'https://twitter.com/AngularHonduras'
+    },
+    {
+      name: 'Angular Málaga',
+      city: 'Málaga',
+      country: 'España',
+      logoUrl: 'assets/meetups/angular-malaga.jpg',
+      logoType: 'jpg',
+      meetupUrl: 'https://www.meetup.com/es-ES/Angular-Malaga/'
+    },
+    {
+      name: 'Angular MVD',
+      city: 'Montevideo',
+      country: 'Uruguay',
+      logoUrl: 'assets/meetups/angular-montevideo.png',
+      logoType: 'png',
+      meetupUrl: 'https://www.meetup.com/Angular-MVD/'
+    },
+    {
+      name: 'ngVenezuela',
+      city: 'Venezuela',
+      country: 'Venezuela',
+      logoUrl: 'assets/meetups/angular-venezuela.png',
+      logoType: 'png',
+      meetupUrl: 'https://twitter.com/ngVenezuela'
+    },
+    {
+      name: 'NgGuayaquil',
+      city: 'Guayaquil',
+      country: 'Ecuador',
+      logoUrl: 'assets/meetups/ng-guayaquil.jpg',
+      logoType: 'jpg',
+      meetupUrl: 'https://www.eventbrite.com/o/ngguayaquil-28192263023'
+    },
+    {
+      name: 'NgPanama',
+      city: 'Panamá',
+      country: 'Panamá',
+      logoUrl: 'assets/meetups/ngPanama.jpg',
+      logoType: 'jpg',
+      meetupUrl: 'https://twitter.com/NgPanama'
+    },
+    {
+      name: 'Angular Bahía',
+      city: 'Salvador',
+      country: 'Brazil',
+      logoUrl: 'assets/meetups/angular-bahia.jpg',
+      logoType: 'jpg',
+      meetupUrl: 'https://twitter.com/AngularBA'
     }
   ];
   constructor() {}

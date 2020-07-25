@@ -18,7 +18,8 @@
         "translation",
         "code",
         "design",
-        "bug"
+        "bug",
+        "fundingFinding"
       ]
     },
     {
@@ -108,7 +109,8 @@
         "bug",
         "a11y",
         "fundingFinding",
-        "business"
+        "business",
+        "financial"
       ]
     },
     {
@@ -207,6 +209,24 @@
       "profile": "http://anacidre.com",
       "contributions": [
         "ideas"
+      ]
+    },
+    {
+      "login": "christianmorante",
+      "name": "Christian Morante",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/29555498?v=4",
+      "profile": "https://github.com/christianmorante",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "mgnDev",
+      "name": "Matias",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/46694122?v=4",
+      "profile": "https://github.com/mgnDev",
+      "contributions": [
+        "content"
       ]
     }
   ],

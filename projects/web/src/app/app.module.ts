@@ -16,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { Angulartics2Module } from 'angulartics2';
+import { NgxAuthFirebaseUIModule } from 'ngx-auth-firebaseui';
 
 import { environment } from '../environments/environment';
 
@@ -30,10 +31,13 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { TopNavComponent } from './top-nav/top-nav.component';
 import { MeetupsComponent } from './meetups/meetups.component';
+import { AuthComponent } from './auth/auth.component';
+import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
 
 export const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'acerca' },
   { path: 'acerca', component: LandingComponent, children: [] },
+  { path: 'auth', component: AuthComponent, children: [] },
   { path: 'coc', component: CodeOfConductComponent, children: [] },
   { path: 'conferencias', component: ConferencesComponent, children: [] },
   { path: 'organizar/meetup', component: OrganizeMeetupComponent, children: [] },
@@ -48,6 +52,7 @@ export const routes: Routes = [
     LandingComponent,
     PageNotFoundComponent,
     TopNavComponent,
+    AuthComponent,
     CodeOfConductComponent,
     SponsorsComponent,
     ConferencesComponent,
@@ -66,7 +71,10 @@ export const routes: Routes = [
       anchorScrolling: 'enabled'
     }),
     AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAnalyticsModule,
     AngularFirePerformanceModule,
+    NgxAuthFirebaseUIModule.forRoot(environment.firebase),
+    // TODO configure settings: https://github.com/anthonynahas/ngx-auth-firebaseui#configuration
     Angulartics2Module.forRoot(),
     LayoutModule,
     MatToolbarModule,
